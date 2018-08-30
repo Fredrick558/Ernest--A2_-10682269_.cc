@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+  int t;
+  int y;
+  bool Aprm= true;
+  
+  cout<< " Please enter a positive integer"<< endl;
+  cin>> t;
+  
+  for(y=2 ;y<= t / 2; ++y)	
+	{
+	
+	  if(t%y==0)	
+	   {
+	
+	       Aprm=false;
+		   break;	
+		
+		
+		}	
+		
+		
+	}
+	if (Aprm) 
+	    cout<< "This is a prime number"<<endl;
+    else
+        cout << "This is not a prime number"<<endl;
+        
+        
+        return 0;
+	
+	
+	
+	
+	
+	
+	
+}
